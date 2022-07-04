@@ -12,7 +12,8 @@
 <body>
     <div id="root">
         <div>
-            <ul>
+            <!-- Stampo in pagina solo SE la lunghezza dell'array randomEmail è = a 10 -->
+            <ul v-if="randomEmail.length === 10">
                 <!-- Stampo tutte le mail in randomEmail utilizzando il ciclo "for" -->
                 <li v-for="email in randomEmail">
                     {{email}}
